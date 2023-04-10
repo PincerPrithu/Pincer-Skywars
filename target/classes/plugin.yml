@@ -1,0 +1,15 @@
+name: PincerSkywars
+version: '1.0-SNAPSHOT'
+main: me.pincer.skywars.Skywars
+api-version: 1.19
+prefix: Skywars
+authors: [ PincerPrithu ]
+commands:
+  arena:
+    usage: /arena <function>
+  skywars:
+    usage: /skywars <function>
+    aliases:
+      - sw
+  chest:
+    usage: /chest <function>
