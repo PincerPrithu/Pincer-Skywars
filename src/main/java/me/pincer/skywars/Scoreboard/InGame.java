@@ -9,7 +9,8 @@ import org.bukkit.entity.Player;
 import java.util.ArrayList;
 import java.util.List;
 
-import static me.pincer.pincerlib.Utilities.LoggerUtils.c;
+
+import static me.pincer.skywars.functions.FormatC.c;
 
 public class InGame {
     public static ScoreboardConfig scoreboard;

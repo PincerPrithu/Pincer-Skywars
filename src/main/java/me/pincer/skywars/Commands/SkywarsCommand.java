@@ -20,7 +20,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static me.pincer.pincerlib.Utilities.LoggerUtils.c;
+
+import static me.pincer.skywars.functions.FormatC.c;
 
 public class SkywarsCommand implements CommandExecutor, TabCompleter {
     @Override

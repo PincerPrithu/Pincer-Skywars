@@ -24,13 +24,16 @@ public class ScoreboardManager {
         getServer().getScheduler().runTaskTimer(Skywars.getInstance(), () -> {
             switch (CurrentGameState) {
                 case LOBBY:
-                        Lobby.updateScoreboard();
+                    Lobby.getScoreboard();
+                    Lobby.updateScoreboard();
                     break;
                 case STARTING:
-                        Lobby.updateScoreboard();
+                    Lobby.getScoreboard();
+                    Lobby.updateScoreboard();
                     break;
                 case INPROGRESS:
-                        InGame.updateScoreboard();
+                    InGame.getScoreboard();
+                    InGame.updateScoreboard();
                     break;
                 case ENDING:
             }

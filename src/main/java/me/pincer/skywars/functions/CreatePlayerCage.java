@@ -1,10 +1,7 @@
 package me.pincer.skywars.functions;
 
 import me.pincer.pincerlib.General.PlayerSpawnLocation;
-import org.bukkit.Bukkit;
-import org.bukkit.GameMode;
-import org.bukkit.Location;
-import org.bukkit.Material;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
@@ -13,6 +10,7 @@ import java.io.IOException;
 import static me.pincer.skywars.Skywars.arenaConfig;
 
 public class CreatePlayerCage {
+    public static World arenaWorld;
     public static void execute() {
         int i = 1;
         for (Player player : Bukkit.getOnlinePlayers()) {
@@ -28,6 +26,7 @@ public class CreatePlayerCage {
                 player.setGameMode(GameMode.ADVENTURE);
                 player.teleport(location.clone().add(0.5, -1, 0.5));
                 i++;
+                arenaWorld = location.getWorld();
             } else {
                 break;
             }

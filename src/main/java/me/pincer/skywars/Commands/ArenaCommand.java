@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static me.pincer.pincerlib.Utilities.LoggerUtils.c;
+import static me.pincer.skywars.functions.FormatC.c;
 
 public class ArenaCommand implements CommandExecutor, TabCompleter {
     @Override
@@ -58,7 +58,6 @@ public class ArenaCommand implements CommandExecutor, TabCompleter {
                 MasterConfig test = new MasterConfig("test", "check");
                 YamlConfiguration configuration = test.getConfig();
                 test.config.set("test", item);
-                Bukkit.broadcastMessage("SEX");
                 test.saveConfig();
         } else {
             player.sendMessage(c("&cInvaild Argument!"));

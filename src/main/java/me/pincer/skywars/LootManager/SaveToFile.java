@@ -1,7 +1,6 @@
 package me.pincer.skywars.LootManager;
 
 import me.pincer.pincerlib.ConfigManager.InventoryConfigManager;
-import org.bukkit.Bukkit;
 import org.bukkit.block.Chest;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;

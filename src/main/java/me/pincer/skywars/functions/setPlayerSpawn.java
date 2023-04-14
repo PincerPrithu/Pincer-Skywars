@@ -7,8 +7,8 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import java.io.IOException;
+import static me.pincer.skywars.functions.FormatC.c;
 
-import static me.pincer.pincerlib.Utilities.LoggerUtils.c;
 
 
 public class setPlayerSpawn {
